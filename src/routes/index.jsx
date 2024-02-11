@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import Logout from "../pages/Logout";
 import Category from "../pages/Category";
 import Cart from "../pages/cart/Cart"
+import Product from "../pages/Product"
 
 const Routes = () => {
   const { token } = useAuth();
@@ -35,6 +36,10 @@ const Routes = () => {
         {
           path: "/cart",
           element: <Cart/>,
+        },
+        {
+          path: "/product/:productId",
+          element: <Product/>,
         },
         {
           path: "/logout",
